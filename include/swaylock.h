@@ -131,6 +131,7 @@ void damage_surface(struct swaylock_surface *surface);
 void damage_state(struct swaylock_state *state);
 void clear_password_buffer(struct swaylock_password *pw);
 void schedule_indicator_clear(struct swaylock_state *state);
+void submit_password(struct swaylock_state *state);
 
 void initialize_pw_backend(int argc, char **argv);
 void run_pw_backend_child(void);

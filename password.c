@@ -78,7 +78,8 @@ static void schedule_password_clear(struct swaylock_state *state) {
 			state->eventloop, 10000, clear_password, state);
 }
 
-static void submit_password(struct swaylock_state *state) {
+void submit_password(struct swaylock_state *state)
+{
 	if (state->args.ignore_empty && state->password.len == 0) {
 		return;
 	}
